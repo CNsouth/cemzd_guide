@@ -1,0 +1,29 @@
+body {
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-mockup {
+    position: relative; 
+    display: inline-block; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    background-color: #fff;
+}
+
+.app-mockup img {
+    display: block;
+    max-width: 900px; 
+    height: auto;
+}
+
+.hotspot {
+    position: absolute;
+    /* 所有的框默认都有边框，只是颜色设为透明 */
+    border: 2px solid transparent; 
+    z-index: 10;
+    pointer-events: none; /* 防止框框挡住鼠标点击图片 */
+}
